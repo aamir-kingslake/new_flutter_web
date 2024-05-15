@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:new_flutter_web/utils/colors.dart';
-import 'package:new_flutter_web/views/home.dart';
+// import 'package:new_flutter_web/views/home.dart';
+import 'package:new_flutter_web/views/web_view_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class App extends StatelessWidget {
+  const App({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         primaryColor: AppColors.primary
       ),
-      home: const Home(),
+      home: const WebViewApp(),
     );
   }
 }
